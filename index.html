@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Make Your Own Candle Scents</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Quicksand:wght@400;500;600&display=swap');
+
+        body {
+            background-color: #FAF0E6;
+            color: #6F4E37;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .steps-section {
+            padding: 40px 0;
+            background-color: #FAF0E6;
+        }
+        .contact-form {
+            padding: 40px 0;
+            background-color: #FAF0E6;
+        }
+        .contact-form .btn-primary {
+            margin-top: 20px;
+        }
+        .step-card {
+            margin: 15px 0;
+            padding: 20px;
+            border: 1px solid #6F4E37;
+            border-radius: 5px;
+            background-color: #FAF0E6;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(111, 78, 55, 0.2);
+        }
+        
+        .step-card h3 {
+            color: #6F4E37;
+            margin-bottom: 15px;
+            font-family: 'Comic Neue', cursive;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .step-card ul {
+            padding-left: 20px;
+            color: #6F4E37;
+        }
+        
+        .step-card li {
+            margin-bottom: 8px;
+        }
+        .carousel {
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .carousel .item img {
+            width: 500px;
+            height: 400px;
+            object-fit: cover;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .grid-item:hover {
+            transform: scale(1.02);
+        }
+        
+        .grid-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .grid-item .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(111, 78, 55, 0.8);
+            color: #FAF0E6;
+            padding: 15px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .grid-item:hover .overlay {
+            transform: translateY(0);
+        }
+        
+        .custom-submit-btn {
+            background-color: #6F4E37;
+            border: none;
+            color: #FAF0E6;
+            padding: 12px 40px;
+            border-radius: 25px;
+            font-size: 16px;
+            width: 250px;
+            transition: all 0.3s ease;
+            font-family: 'Comic Neue', cursive;
+            font-weight: 700;
+        }
+        
+        .custom-submit-btn:hover {
+            background-color: #8B6B4E;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(111, 78, 55, 0.3);
+        }
+        
+        .custom-submit-btn:focus {
+            outline: none;
+            background-color: #6F4E37;
+        }
+
+        .header h1 {
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(111, 78, 55, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>How to Make Your Own Candle Scents</h1>
+    </div>
+
+    <!-- Steps Section -->
+    <div class="steps-section">
+        <div class="container">
+            <h2>Making Steps</h2>
+            <div class="image-grid">
+                <div class="grid-item">
+                    <a href="./images/Step-1.png" data-lightbox="steps" data-title="Step 1: Prepare Soy Wax">
+                        <img src="./images/Step-1.png" alt="Prepare Soy Wax">
+                        <div class="overlay">
+                            <h3>Step 1: Prepare Soy Wax</h3>
+                            <p>Prepare Materials</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="./images/Step-2.png" data-lightbox="steps" data-title="Step 2: Set the Wick">
+                        <img src="./images/Step-2.png" alt="Wick Setting">
+                        <div class="overlay">
+                            <h3>Step 2: Set the Wick</h3>
+                            <p>Fix the Wick Position</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="./images/Step-3.png" data-lightbox="steps" data-title="Step 3: Add Color and Fragrance">
+                        <img src="./images/Step-3.png" alt="Color and Fragrance">
+                        <div class="overlay">
+                            <h3>Step 3: Add Color and Fragrance</h3>
+                            <p>Mix Colors and Scents</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="./images/Step-4.png" data-lightbox="steps" data-title="Step 4: Unmold and Finish">
+                        <img src="./images/Step-4.png" alt="Unmolding">
+                        <div class="overlay">
+                            <h3>Step 4: Unmold and Finish</h3>
+                            <p>Final Steps</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Add step card section -->
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-md-6">
+                    <div class="step-card">
+                        <h3>Step 1: Prepare Soy Wax</h3>
+                        <p>Required Materials:</p>
+                        <ul>
+                            <li>Soy Wax (Soy Wax Flakes)</li>
+                            <li>Candle Container</li>
+                            <li>Double Boiler or Melting Equipment</li>
+                        </ul>
+                    </div>
+                    <div class="step-card">
+                        <h3>Step 2: Set the Wick</h3>
+                        <p>Wick Setting Process:</p>
+                        <ul>
+                            <li>Secure Wick Base</li>
+                            <li>Ensure Vertical Position</li>
+                            <li>Initial Fixing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="step-card">
+                        <h3>Step 3: Add Color and Fragrance</h3>
+                        <p>Adding Colors and Scents:</p>
+                        <ul>
+                            <li>Control Temperature at 60°C</li>
+                            <li>Add Essential Oils</li>
+                            <li>Mix in Color Dyes</li>
+                        </ul>
+                    </div>
+                    <div class="step-card">
+                        <h3>Step 4: Unmold and Finish</h3>
+                        <p>Final Steps:</p>
+                        <ul>
+                            <li>Pour into Mold or Container</li>
+                            <li>Wait for Complete Cooling</li>
+                            <li>Carefully Remove from Mold</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="return submitForm(event)">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="custom-submit-btn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+    function submitForm(event) {
+        event.preventDefault();
+        alert("Thank you for submitting the form! We will contact you as soon as possible.");
+        document.getElementById("contactForm").reset();
+        return false;
+    }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
